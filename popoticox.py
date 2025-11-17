@@ -14,10 +14,6 @@ with st.sidebar:
     st.write("# Opciones")
     div = st.slider("Número de bins (histograma):", 0, 10, 2)
     st.write("Bins seleccionados:", div)
-    st.write("# masculino o femenino ")
-    dev = st.selectbox (["hombre" , "femenino"])
-
-
 fig, ax = plt.subplots(1, 2, figsize=(10, 3))
 
 
@@ -78,5 +74,4 @@ for sex in df[sex_col].unique():
     )
     plt.title(f'Supervivencia para {sex}')
     plt.show()
-
 
