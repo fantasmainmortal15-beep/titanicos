@@ -41,10 +41,10 @@ st.write("## Número de sobrevivientes agrupados por sexo")
 survivors_by_sex = df.groupby("Sex")["Survived"].sum()
 
 fig2, ax2 = plt.subplots(figsize=(5, 3))
-ax[2].bar(["Femenino", "Masculino"], [survivors_by_sex["female"], survivors_by_sex["male"] ])
-ax[2].set_xlabel("Sexo")
-ax[2].set_ylabel("Sobrevivientes")
-ax[2].set_title("Sobrevivientes por sexo")
+ax2.bar(["Femenino", "Masculino"], [survivors_by_sex["female"], survivors_by_sex["male"] ])
+ax2.set_xlabel("Sexo")
+ax2.set_ylabel("Sobrevivientes")
+ax2.set_title("Sobrevivientes por sexo")
 
 st.pyplot(fig2)
 
@@ -74,4 +74,5 @@ for sex in df[sex_col].unique():
     )
     plt.title(f'Supervivencia para {sex}')
     plt.show()
+
 
