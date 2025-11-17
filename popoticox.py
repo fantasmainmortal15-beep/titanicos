@@ -52,7 +52,7 @@ ax[2].set_title("Sobrevivientes por sexo")
 
 st.pyplot(fig2)
 
-st.image("C:\Users\sebas\Downloads\descargar (1).jpg")
+st.image("descargar (1).jpg")
 
 st.title("fallecidos y supervivientes")
 
@@ -78,3 +78,5 @@ for sex in df[sex_col].unique():
     )
     plt.title(f'Supervivencia para {sex}')
     plt.show()
+
+
